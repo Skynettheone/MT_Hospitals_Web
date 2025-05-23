@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="CSS/order.css">
+    <title>Online Payments</title>
+    <link rel = "icon" href = "Images/MT (2).png">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<body>
+    <div class="box">
+        <div class="title">
+          Online Payments
+        </div>
+        
+        <div class="form">
+           <div class="inputfield">
+              <label>Patient Name</label>
+              <input type="text" class="input">
+           </div>  
+            
+           <div class="inputfield">
+              <label>Appoinment Number</label>
+              <input type="text" class="input">
+           </div>  
+           
+          <div class="inputfield">
+              <label>Value of the Payment</label>
+              <span class="currency">LKR</span>
+              <input type="text" class="input">
+           </div> 
+            <div class="inputfield">
+              <label>Gender</label>
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              
+           </div> 
+           <div class="inputfield">
+            <label>Patient Quatation ID</label>
+              <input type="text" class="input">
+           </div>
+           <div class="inputfield">
+            <label>Payment Options</label>
+            <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="Inpatient Payment">Inpatient Payment</option>
+                  <option value="Outpatient payment">Outpatient payment</option>
+                  <option value="Quotation Payment">Quotation Payment</option>
+                </select>
+              </div>
+           </div>
+            <div class="inputfield">
+              <label>Email Address</label>
+              <input type="text" class="input">
+           </div> 
+          <div class="inputfield">
+              <label>Phone Number</label>
+              <input type="text" class="input">
+           </div> 
+          
+          <div class="inputfield terms">
+              <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <p>Agreed to terms and conditions</p>
+           </div> 
+           <form class="click" action="checkout.html">
+          <div class="inputfield" >
+            <input type="submit" value="Proceed to Pay" class="btn" >
+          </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

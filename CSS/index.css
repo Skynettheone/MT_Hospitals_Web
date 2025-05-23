@@ -1,0 +1,1278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+  } 
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #e7faff;
+    border-radius: 0px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient( 315deg , #4070f4, #62a7d8 ); 
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient( 315deg , #3268fd, #4f8cb8 ); 
+  }
+
+  #topnav{
+
+    top: 0;
+  
+  }
+
+  .top {
+
+    height: 30px;
+    background-color: #afd9e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .top h1{
+
+    font-size: 15px;
+    padding-left: 45%;
+    color: #000000;
+    font-weight: 500;
+
+  }
+
+  header {
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 30px;
+  }
+
+  nav {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    transition: 0.20s  ease-in-out;
+     
+}
+
+nav.black {
+  background: #ffffff;
+  border-bottom-left-radius: 70px;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+nav ul li {
+    padding: 20px;
+    font-size: 16.5px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul  :hover{
+  font-weight: 500;
+  color: #3b70ff;
+  font-size: 17px;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a3a3a;
+    text-transform: uppercase;
+}
+
+
+nav ul li ul {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    width: 180%;
+    background-color: #dddddd;
+    border-radius: 25px;
+    transition: 0.15s ease-in-out;
+    line-height: 1px;
+}
+
+nav > ul > li > ul {
+    left: 0;
+    top: 100%;
+}
+
+.drop-icon {
+    transform: rotate(-90deg);
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    
+    color: #3a3a3a;
+    display: none;
+}
+
+label:hover{
+  
+  color: #3b70ff;
+
+}
+
+label span {
+    font-family: "Roboto", serif;
+}
+
+@media (max-width:768px) {
+
+  nav {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+    nav > ul {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        transition: 0.15s linear;
+        background-color: #ffffff;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 10px;
+    }
+
+label {
+        display: flex;
+        margin-right: -50px;
+    }
+
+    .drop-icon {
+        transform: rotate(0deg);
+    }
+
+    nav ul li ul {
+        width: max-content;
+        z-index: 1;
+        width: 200%;
+        border-top: 2px solid #fff;
+        border-radius: 0;
+
+    }
+
+    input:checked ~ #menu {
+        left: 0;
+    }
+}
+
+@media (max-width:1210px){
+
+    nav {
+        width: 100%;
+        height: 70px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+        nav > ul {
+            position: absolute;
+            top: 70px;
+            left: -100%;
+            width: 100%;
+            transition: 0.15s linear;
+            background-color: #ffffff;
+            border-bottom-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+    
+        nav ul li {
+            display: block;
+            line-height: 10px;
+        }
+    
+    label {
+            display: flex;
+            margin-right: -50px;
+        }
+    
+        .drop-icon {
+            transform: rotate(0deg);
+        }
+    
+        nav ul li ul {
+            width: max-content;
+            z-index: 1;
+            width: 200%;
+            border-top: 2px solid #ffffff;
+            border-radius: 0;
+
+        }
+    
+        input:checked ~ #menu {
+            left: 0;
+        }
+
+        .top h1{
+
+            font-size: 15px;
+            padding-left: 36%;
+            color: #000000;
+            font-weight: 500;
+ 
+          }
+
+}
+
+.backvid {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.col-1 {
+
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+.col-1 h1 {
+
+    font-size: 70px;
+
+}
+
+.col-1 h1 span {
+
+    color: #007896;
+}
+
+.col-1 p {
+
+    font-size: 16px;
+
+}
+
+.btn button {
+    
+    padding: 10px 30px;
+    outline: none;
+    margin-top: 20px;
+    width: 30%;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(to right, #4070f4, #62a7d8 );
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+     
+}
+
+.btn button:hover {
+
+    background: linear-gradient(to left, #4070f4, #62a7d8 );
+    box-shadow: 0 0 20px 9px #afafaf3b ;
+
+}
+
+.btn button a {
+
+    text-decoration: none;
+
+}
+
+.col-1::after{
+
+    content:'' ;
+    width: 10px;
+    height: 57%;
+    background: #007896;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    border-radius: 25px;
+
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.col-2 .hospital {
+
+    width: 90%;
+    transition: 0.5s ease;
+
+}
+
+.col-2 .hospital:hover {
+
+    transform: scale(1.1);
+
+}
+
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 60%;
+    z-index: -1;
+    transform: translateX(0);
+}
+
+.welcome{
+
+    width: auto;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:#c7d6ff ;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.welcome .heading1 {
+   
+    font-size: 25px;
+    font-weight: 250;
+
+}
+
+.welcome .heading2 {
+
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.welcome .heading2 span {
+
+    color: #007896;
+    font-weight: 900;
+
+}
+
+.welcome button {
+
+    padding: 10px 30px;
+    outline: none;
+    margin-top: 20px;
+    width: 15%;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(to right, #4070f4, #62a7d8 );
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+
+}
+
+.welcome button:hover {
+
+    background: linear-gradient(to left, #4070f4, #62a7d8 );
+    box-shadow: 0 0 20px 9px #afafaf3b ;
+
+}
+
+.welcome button a{
+
+    text-decoration: none;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.welcome .content3 {
+
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+
+}
+
+.mtbanner1 {
+
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#91aeff ;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.mtbanner1 .photo {
+
+    flex-basis: 50%;
+    
+}
+
+.mtbanner1 .photo .hospital1{
+
+    width: 90%;
+    border-radius: 25px;
+
+}
+
+
+.mtbanner1 .para1 {
+
+    flex-basis: 50%;
+
+}
+
+.mtbanner1 .para1 .heading3{
+
+    font-size: 25px;
+    font-weight: 250;
+
+}
+
+.mtbanner1 .para1 .heading3 span {
+
+    color: #007896;
+    font-weight: 350;
+
+}
+
+.mtbanner1 .para1 .heading4{
+
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.mtbanner1 .para1 .content4 {
+
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+
+}
+
+.mtbanner2 {
+
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#91aeff ;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.mtbanner2 .photo {
+
+    flex-basis: 50%;
+
+}
+
+.mtbanner2 .photo .hospital1{
+
+    width: 90%;
+    border-radius: 25px;
+
+}
+
+
+.mtbanner2 .para1 {
+
+    flex-basis: 50%;
+
+}
+
+.mtbanner2 .para1 .heading3{
+
+    font-size: 25px;
+    font-weight: 250;
+
+}
+
+.mtbanner2 .para1 .heading3 span {
+
+    color: #007896;
+    font-weight: 350;
+}
+
+.mtbanner2 .para1 .heading4{
+
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+.mtbanner2 .para1 .content4 {
+
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+
+}
+
+.mtbanner2 button {
+
+    padding: 10px 30px;
+    outline: none;
+    margin-top: 20px;
+    width: 25%;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(to right, #4070f4, #62a7d8 );
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+
+}
+
+.mtbanner2 button:hover {
+
+    background: linear-gradient(to left, #4070f4, #62a7d8 );
+    box-shadow: 0 0 20px 9px #afafaf3b ;
+
+}
+
+.mtbanner2 button a{
+
+    text-decoration: none;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+
+.back{
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.bar {
+
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:linear-gradient(to right, #4070f4, #62a7d8 );
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.bar .bar-1 {
+
+    flex-basis: 25%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+   
+}
+
+.bar .bar-1 .thumbnail {
+    margin: 5%;
+    width: 40%;
+    border-radius: 45%;
+    padding-top: 10px;
+
+}
+
+.bar .bar-1 .topic {
+
+    text-align: center;
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.bar .bar-1 .barcontent{
+
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+@media only screen and (max-width:900px) {
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding-top: 110%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    
+    }
+
+    .backvid{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .backvid{
+
+        width: auto;
+        height: 100%;
+        
+    }
+
+    .col-1 h1 {
+
+        font-size: 50px;
+    
+    }
+
+    .col-2 {
+
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        
+    }
+
+    .col-2 .hospital{
+
+        width: 77%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .color-box {
+
+        transform: translateX(0px);
+
+    }
+
+    .col-1 {
+
+        flex-basis: 100%;
+        margin-left: 70px;
+        margin-right: 60px;
+
+    }
+
+    .welcome{
+
+        width: auto;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background:#c7d6ff ;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+    }
+
+    .bar {
+
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background:linear-gradient(to right, #4070f4, #62a7d8 );
+        margin-left: 15px;
+        margin-right: 15px;
+    
+    }
+    .bar .bar-1 {
+    
+        flex-basis: 50%;
+        position: relative;
+        text-align: center;
+        padding-bottom: 10px;
+       
+    }
+
+    .bar .bar-1 .thumbnail {
+       
+        width: 20%;
+        
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding-top: 145%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    
+    }
+
+    .backvid{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .backvid{
+
+        width: auto;
+        height: 100%;
+        
+    }
+    .col-1 h1 {
+
+        font-size: 50px;
+     
+    }
+
+    .col-2 {
+
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        
+    }
+
+    .col-2 .hospital{
+
+        width: 77%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .color-box {
+
+        transform: translateX(0px);
+
+    }
+
+    .col-1 {
+
+        flex-basis: 100%;
+        margin-left: 70px;
+        margin-right: 60px;
+
+    }
+
+    .btn button {
+    
+        padding: 7px 10px;
+        outline: none;        
+        margin-top: 20px;
+        width: 40%;
+        border-radius: 25px;
+              
+    }
+
+    .welcome .content3 {
+
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    
+    }
+
+    .welcome button {
+        padding: 7px 10px;
+        width: 40%;
+        
+    }
+    
+    .mtbanner1 {
+
+        flex-direction: column-reverse;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+    }
+    
+    .mtbanner1 .photo {
+
+        flex-basis: 100%;
+        
+    }
+    
+    .mtbanner1 .photo .hospital1{
+    
+        width: 90%;
+        border-radius: 25px;
+        padding-top: 10px;
+    
+    }
+    
+    
+    .mtbanner1 .para1 {
+    
+        flex-basis: 100%;
+    
+    }
+
+    .bar {
+
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background:linear-gradient(to right, #4070f4, #62a7d8 );
+        margin-left: 15px;
+        margin-right: 15px;
+    
+    }
+    .bar .bar-1 {
+    
+        flex-basis: 100%;
+        position: relative;
+        text-align: center;
+        padding-bottom: 10px;
+       
+    }
+
+    .mtbanner2 {
+
+        flex-direction: column-reverse;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+    }
+    
+    .mtbanner2 .photo {
+
+        flex-basis: 100%;
+        
+    }
+    
+    .mtbanner2 .photo .hospital1{
+    
+        width: 90%;
+        border-radius: 25px;
+        padding-top: 10px;
+    
+    }
+    
+    
+    .mtbanner2 .para1 {
+    
+        flex-basis: 100%;
+    
+    }
+
+    .mtbanner2 button {
+      
+        padding: 7px 10px;
+        width: 40%;
+        
+    }
+
+    .welcome button {
+
+        padding: 7px 10px;
+        width: 40%;
+
+    }
+
+    .mtbanner2 button {
+
+        padding: 7px 10px;
+        width: 40%;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:410px){
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding-top: 230%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    
+    }
+
+
+}
+
+@media only screen and (max-width:450px){
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding-top: 200%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    
+    }
+
+
+}
+
+@media only screen and (max-width:375px){
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        padding-top: 230%;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    
+    }
+
+
+}
+
+
+
+
+
+.back1{
+	padding-top: 80px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(background.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.footer{
+	
+	background: #fff5f5 ;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 'poppins' 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer .footer-left{
+	width: 40%;
+}
+
+.footer h3{
+	color:  #018eb1;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer h3 span{
+	color:  rgb(0, 0, 0);
+}
+
+
+.footer .footer-links{
+	color:  #000000;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  	font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .company{
+	color:  rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer .footer-center{
+	width: 35%;
+}
+
+.footer .footer-center i{
+	background-color:  #000000;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p{
+	display: inline-block;
+	color: #000000;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer .footer-center p a{
+	color:  #000000;
+	text-decoration: none;;
+}
+
+.footer .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+.footer .footer-links :hover{
+	color:#3b70ff;
+}
+
+.footer .footer-right{
+	width: 20%;
+}
+
+.footer .footer-company-about{
+	line-height: 20px;
+	color:  #000000;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer .footer-company-about span{
+	display: block;
+	color:  #000000;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer .footer-icons{
+	margin-top: 25px;
+}
+
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color:  #000000;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer{
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-center,
+	.footer .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+    .footer .footer-center{
+
+        text-align: left;
+        margin-left: 40px ;
+  
+      }
+      .footer .footer-center i{
+        margin-left: 0;
+       
+      }
+  
+    }
+  
+    @media (max-width: 400px){
+  
+      .footer .footer-center{
+  
+        text-align: left;
+        margin-left: 20px ;
+  
+      }
+  
+    }
+  

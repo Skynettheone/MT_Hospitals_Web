@@ -1,0 +1,132 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+body{
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+        background-image: 
+    linear-gradient( #000000b6, #000000d7),
+    url('./Images/background.jpg');
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    padding: 25px 25px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+h1 {
+
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+h1::before{
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 80px;
+    background-color: #45b5ff;
+    border-radius: 25px;
+
+}
+
+input ,
+select 
+{
+
+    width: 100%;
+    border-radius: 25px;
+    height: 35px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #b3b3b3;
+    
+}
+
+.Fields .label {
+
+    font-size: 18px;
+    font-weight: 450;
+
+}
+
+.Fields {
+
+    padding-top: 20px;
+
+}
+
+.button {
+
+    padding-top: 50px;
+    display: flex;
+
+}
+
+.btn{
+  
+    width: 40%;
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #4070f4, #62a7d8 );
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+  }
+
+  .btn a {
+
+    font-size: 16.5px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+
+  }
+  
+  .btn:hover{
+  
+    background: linear-gradient(to left, #4070f4, #62a7d8 );
+    box-shadow: 0 0 20px 9px #afafaf3b ;
+  }
+
+  @media (max-width: 920px) {
+
+    .btn{
+  
+        width: 47%;
+        padding: 5px 20px;
+      
+    
+      }
+
+
+
+
+  }
+
