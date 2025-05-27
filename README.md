@@ -25,5 +25,3 @@ This project is a basic hospital website created as a group project for the **Es
 - **Interactive Forms**: Styled forms for login, registration, doctor channeling, and e-pharmacy, with UI enhancements
 - **Multi-page Structure**: Organized into multiple pages (Home, About Us, Services, Doctor Channeling, E-Pharmacy, Contact, etc.)
 - **Demonstration-Only Features**: Some features (like doctor channeling, e-pharmacy order) are included to show how they would work, but are not fully functional (no backend)
-
-*This project is for educational purposes only.* 
