@@ -2,7 +2,7 @@
 
 This project is a basic hospital website created as a group project for the **Esoft Diploma in Information Technology**. The main goal was to build a simple, informative website using primarily HTML and CSS basics, as per the assignment requirements. However, we also explored some advanced CSS and added a few simple functional features to enhance the user experience.
 
-**Note*: While we aimed to make the website responsive, there may be some bugs or inconsistencies in responsiveness since we focused on basic techniques rather than industry-standard frameworks or methods for this project.
+**Note: While we aimed to make the website responsive, there may be some bugs or inconsistencies in responsiveness since we focused on basic techniques rather than industry-standard frameworks or methods for this project.*
 
 ## Project Purpose
 - **Coursework:** Group project for Esoft Diploma in IT
